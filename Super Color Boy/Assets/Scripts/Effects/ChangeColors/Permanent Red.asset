@@ -22,4 +22,4 @@ MonoBehaviour:
   duration: 0
   durationDecay: 1
   isDone: 0
-  customColor: {fileID: 11400000, guid: bae48491f4682c24295128da0a01fed1, type: 2}
+  newColor: 2

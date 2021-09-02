@@ -23,16 +23,16 @@ public class Player : Entity
     #region Basic
     protected override void Start()
     {
-        base.Start();
-        airJumps = 0;           // Set variables' initial values (start).
-        jumpTimer = 0f;         //
-        isJumping = false;      // 
-        onGround = false;       // Set variables' initial values (end).
+        base.Start();           // Entity script's Start().
+        airJumps = 0;           // Set 'airJumps' initial value.
+        jumpTimer = 0f;         // Set 'jumpTimer' initial value.
+        isJumping = false;      // Set 'isJumping' initial value.
+        onGround = false;       // Set 'onGround' initial value.
     }
 
     protected override void Update()
     {
-        base.Update();
+        base.Update();  // Entity script's Update().
         GetInputs();    // Checks if player is sending any input each frame.
         Move(movementInput.x);      // Move the player according to movement input.
         if (movementInput.y != 0f || isJumping)     // If the player is sending vertical movement input or is currently jumping...

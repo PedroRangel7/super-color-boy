@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3668935c968efb5469d449bf45d53ff5, type: 3}
   m_Name: Permanent Green
   m_EditorClassIdentifier: 
-  title: New Effect
-  isInstantaneous: 0
+  title: Green
+  isInstantaneous: 1
   isTick: 0
   numberOfTicks: 0
   ticksDecay: 1
@@ -22,4 +22,4 @@ MonoBehaviour:
   duration: 0
   durationDecay: 1
   isDone: 0
-  newColor: {r: 0, g: 0, b: 0, a: 0}
+  newColor: 3
