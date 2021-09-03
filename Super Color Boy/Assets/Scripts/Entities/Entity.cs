@@ -8,7 +8,7 @@ public abstract class Entity : MonoBehaviour
 {
     #region Variables
     [Header("Movement")]     // Unity Inspector Header.
-    [SerializeField] [Range(200, 1000)] protected float movementSpeed = 700f;       // Entity's horizontal movement speed.
+    [SerializeField] [Range(200f, 1000f)] protected float movementSpeed = 700f;     // Entity's horizontal movement speed.
     public EffectApplier effects;                                                   // Entity's effect list.
 
     protected Rigidbody2D rigidBody;                                                // Rigidbody component reference.
@@ -39,7 +39,7 @@ public abstract class Entity : MonoBehaviour
             Flip();                                                                 // ... Flip entity's sprite.
     }
 
-    private void Flip() {   // Flips entity's sprite.
+    protected void Flip() {   // Flips entity's sprite.
         facingRight = !facingRight;     // Inverts 'facingRight' value.
         transform.localScale = new Vector3(transform.localScale.x * -1f, transform.localScale.y, transform.localScale.z);   // Flips entity's sprite.
     }

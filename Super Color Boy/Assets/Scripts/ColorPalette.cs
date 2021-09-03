@@ -21,28 +21,20 @@ public class ColorPalette : ScriptableObject
         switch (paletteColor) {
             case PaletteColor.Black:
                 return black;
-                break;
             case PaletteColor.White:
                 return white;
-                break;
             case PaletteColor.Red:
                 return red;
-                break;
             case PaletteColor.Green:
                 return green;
-                break;
             case PaletteColor.Blue:
                 return blue;
-                break;
             case PaletteColor.Yellow:
                 return yellow;
-                break;
             case PaletteColor.Pink:
                 return pink;
-                break;
             default:
                 return black;
-                break;
         }
     }
     #endregion

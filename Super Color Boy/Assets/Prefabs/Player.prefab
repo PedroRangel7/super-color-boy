@@ -261,6 +261,7 @@ Transform:
   m_Children:
   - {fileID: 5163165532667718961}
   - {fileID: 5163165532772488524}
+  - {fileID: 4906479845494338927}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -376,11 +377,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 700
-  jumpForce: 5
+  airMovementSpeed: 400
+  jumpForce: 4.25
   maxAirJumps: 0
+  holdJumpMultiplier: 2
   maxJumpTime: 0.35
-  feetRadius: 0.45
+  wallSlideSpeed: 1
+  slideSpeedLooseMultiplier: 2
+  wallJumpForce: 6
+  wallJumpAngle: {x: 1.25, y: 3}
+  handSize: {x: 0.05, y: 0.8}
+  playersHand: {fileID: 4906479845494338927}
+  feetSize: {x: 0.8, y: 0.05}
   playersFeet: {fileID: 5163165532772488524}
-  groundLayer:
+  groundWallLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!1 &8832767587792160032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4906479845494338927}
+  m_Layer: 0
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4906479845494338927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832767587792160032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5163165532773896946}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
